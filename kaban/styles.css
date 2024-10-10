@@ -1,0 +1,375 @@
+/* styles.css */
+
+/* =========================================================
+   1. Reset e Configurações Globais
+========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333333; /* Texto principal */
+    background-color: #b9b4b4; /* Cor de fundo unificada */
+}
+
+a {
+    text-decoration: none;
+    color: #4A90E2; /* Azul suave */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #357ABD; /* Azul médio para hover */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.section {
+    padding: 80px 20px;
+}
+
+/* =========================================================
+   2. Paleta de Cores Personalizadas
+========================================================= */
+:root {
+    --primary-color: #4A90E2; /* Azul Suave */
+    --primary-hover-color: #357ABD; /* Azul Médio para hover */
+    --secondary-color: #A0A0A0; /* Cinza Claro */
+    --background-color: #FAFAFA; /* Fundo unificado */
+    --dark-color: #333333; /* Texto principal */
+    --light-color: #FFFFFF; /* Branco */
+    --text-color: #333333; /* Texto principal */
+    --light-text-color: #A0A0A0; /* Texto secundário */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* =========================================================
+   3. Navbar
+========================================================= */
+.navbar {
+    background-color: var(--dark-color); /* Fundo escuro para navbar */
+    box-shadow: 0 2px 4px var(--shadow-color);
+    padding: 20px 40px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.navbar-nav .nav-link {
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: var(--light-color);
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--dark-color);
+    background-color: var(--primary-color);
+}
+
+/* =========================================================
+   4. Header (Seção Inicial)
+========================================================= */
+header {
+    background-color: var(--primary-color); /* Fundo sólido */
+    color: var(--light-color);
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease-out;
+}
+
+header p {
+    font-size: 1.25rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* =========================================================
+   5. Seções de Conteúdo
+========================================================= */
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--light-color);
+    box-shadow: 0 4px 6px var(--shadow-color);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px var(--shadow-color);
+}
+
+.card-title {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.card-text {
+    color: var(--light-text-color);
+    font-size: 1rem;
+}
+
+/* Vídeos Responsivos */
+.ratio iframe {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.ratio iframe:hover {
+    transform: scale(1.05);
+}
+
+/* Tabelas */
+.table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead th {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-align: left;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+.table tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #E0E0E0;
+    color: var(--dark-color);
+}
+
+.table tbody tr:hover {
+    background-color: #F5F5F5; /* Cinza muito claro ao passar o mouse */
+}
+
+/* Listas */
+.list-group-item {
+    border: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-item a {
+    color: var(--primary-color);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.list-group-item a:hover {
+    color: var(--primary-hover-color);
+    text-decoration: underline;
+}
+
+/* =========================================================
+   6. Formulário de Contato
+========================================================= */
+form .form-control {
+    border-radius: 6px;
+    border: 1px solid #D1D1D1;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.btn-secondary {
+    background-color: #A0A0A0; /* Cinza Claro */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #8C8C8C; /* Cinza Médio para hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+/* =========================================================
+   7. Footer
+========================================================= */
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+footer a {
+    color: var(--light-color);
+    font-size: 1.25rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+/* =========================================================
+   8. Responsividade
+========================================================= */
+@media (max-width: 768px) {
+    header {
+        padding: 80px 20px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 0.5rem 0;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+
+    footer a {
+        font-size: 1rem;
+        margin: 0 5px;
+    }
+}
+
+/* =========================================================
+   9. Estilos Adicionais
+========================================================= */
+
+/* Accordion no FAQ */
+.accordion-button {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.accordion-button::after {
+    filter: none;
+    transition: transform 0.3s ease;
+}
+
+.accordion-button.collapsed::after {
+    transform: rotate(-90deg);
+}
+
+.accordion-collapse {
+    border-left: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.accordion-body {
+    padding: 1rem;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-size: 0.95rem;
+    border-top: none;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+/* =========================================================
+   10. Ajustes Finais para Unificação da Cor de Fundo
+========================================================= */
+
+/* Remover cores de fundo específicas das seções */
+.section.bg-primary,
+.section.bg-light {
+    background-color: var(--background-color);
+    color: var(--dark-color);
+}
+
+.card.bg-light,
+.accordion-body,
+.ratio iframe {
+    background-color: var(--light-color);
+}
+
+.list-group-item.bg-primary,
+.list-group-item.bg-light {
+    background-color: var(--background-color);
+    color: var(--dark-color);
+}
+
+/* Ajustar cabeçalho sem imagem de fundo */
+header {
+    background-color: var(--primary-color); /* Fundo sólido */
+    /* Removido o background image */
+}

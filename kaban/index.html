@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Google Fonts (Opcional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kanban</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Página Inicial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#historia">História</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#implementacao">Implementação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#casos">Casos de Uso</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#dicas">Dicas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="section bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="display-4">Bem-vindo ao Kanban</h1>
+                <p class="lead">Organize suas tarefas de forma eficiente e visualize seu progresso.</p>
+                <img src="imagem1.jpg" class="img-fluid rounded mb-4" alt="Introdução ao Kanban">
+            </div>
+        </div>
+    </header>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre o Kanban</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="imagem7.png" class="img-fluid rounded-circle shadow mb-3" alt="Sobre o Kanban">
+                </div>
+                <div class="col-md-6">
+                    <p>O Kanban é uma metodologia de gerenciamento de projetos que visa otimizar o fluxo de trabalho e aumentar a eficiência da equipe. Utilizando um sistema visual, o Kanban permite que todos os membros da equipe acompanhem o progresso das tarefas, identifiquem gargalos e promovam melhorias contínuas.</p>
+                    <p>Adotado em diversos setores, desde manufatura até desenvolvimento de software, o Kanban é uma ferramenta versátil que facilita a colaboração e a transparência, assegurando que os projetos sejam concluídos de forma organizada e eficaz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios do Kanban com fundo primário -->
+    <section class="section bg-primary text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Benefícios do Kanban</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm bg-light text-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Visualização do Trabalho</h5>
+                            <p class="card-text">Permite que todos na equipe vejam o que está sendo feito, facilitando a comunicação.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm bg-light text-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Redução do Tempo de Ciclo</h5>
+                            <p class="card-text">Melhora a eficiência, permitindo que as equipes concluam as tarefas com mais rapidez.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm bg-light text-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Flexibilidade</h5>
+                            <p class="card-text">Facilita a adaptação a mudanças e priorização de tarefas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm bg-light text-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Melhoria Contínua</h5>
+                            <p class="card-text">Promove uma cultura de feedback e adaptação constante.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- História do Kanban -->
+    <section id="historia" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">História do Kanban</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="imagem2.jpg" class="img-fluid rounded mb-3" alt="História do Kanban">
+                </div>
+                <div class="col-md-6">
+                    <p>Desenvolvido por Taiichi Ohno na Toyota na década de 1940, o Kanban foi criado como uma metodologia para melhorar a eficiência do sistema de produção. A palavra "Kanban" significa "cartão" ou "sinal visual" em japonês, refletindo a natureza visual da metodologia.</p>
+                    <p>Inicialmente, o Kanban foi implementado para gerenciar o fluxo de trabalho na fábrica, mas desde então, evoluiu e é amplamente utilizado em diversos setores, incluindo tecnologia, marketing e desenvolvimento de software.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementação do Kanban -->
+    <section id="implementacao" class="section bg-primary text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Implementação do Kanban</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Implementar Kanban em sua equipe envolve várias etapas fundamentais:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-primary text-white"><strong>1. Visualize o Fluxo de Trabalho:</strong> Crie um quadro Kanban com colunas que representem as etapas do seu processo.</li>
+                        <li class="list-group-item bg-primary text-white"><strong>2. Limite o Trabalho em Progresso (WIP):</strong> Defina limites para o número de tarefas que podem estar em cada etapa ao mesmo tempo.</li>
+                        <li class="list-group-item bg-primary text-white"><strong>3. Gerencie o Fluxo:</strong> Monitore e ajuste continuamente o fluxo de trabalho para melhorar a eficiência.</li>
+                        <li class="list-group-item bg-primary text-white"><strong>4. Faça Melhorias Contínuas:</strong> Realize reuniões regulares para discutir o progresso e identificar áreas de melhoria.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos de Uso do Kanban -->
+    <section id="casos" class="section bg-primary text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Casos de Uso do Kanban</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm bg-light text-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Desenvolvimento de Produtos</h5>
+                            <p class="card-text">Empresas de tecnologia utilizam Kanban para gerenciar o ciclo de vida do desenvolvimento de produtos, desde a concepção até o lançamento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm bg-light text-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Gestão de Projetos</h5>
+                            <p class="card-text">Equipes de diferentes setores aplicam Kanban para manter o controle sobre as tarefas, prazos e recursos, garantindo a entrega eficiente dos projetos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dicas e Melhores Práticas -->
+    <section id="dicas" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Dicas e Melhores Práticas</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-light text-dark"><strong>1. Mantenha o Quadro Atualizado:</strong> Atualize o quadro Kanban regularmente para refletir o estado atual das tarefas.</li>
+                        <li class="list-group-item bg-light text-dark"><strong>2. Limite o WIP:</strong> Defina limites claros para o trabalho em progresso para evitar sobrecarga da equipe.</li>
+                        <li class="list-group-item bg-light text-dark"><strong>3. Realize Reuniões Regulares:</strong> Faça reuniões diárias ou semanais para revisar o progresso e ajustar o fluxo de trabalho conforme necessário.</li>
+                        <li class="list-group-item bg-light text-dark"><strong>4. Utilize Cores e Etiquetas:</strong> Use cores e etiquetas para categorizar e priorizar tarefas de forma eficaz.</li>
+                        <li class="list-group-item bg-light text-dark"><strong>5. Envolva Toda a Equipe:</strong> Certifique-se de que todos os membros da equipe estão engajados e contribuem para a atualização do quadro.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ - Perguntas Frequentes -->
+    <section id="faq" class="section bg-primary text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Perguntas Frequentes (FAQ)</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            O que é Kanban?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Kanban é uma metodologia de gerenciamento de projetos que utiliza um quadro visual para monitorar o progresso das tarefas, promovendo a eficiência e a melhoria contínua.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Como Kanban pode melhorar a produtividade da equipe?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Ao visualizar o fluxo de trabalho e limitar o trabalho em progresso, Kanban ajuda a identificar gargalos, priorizar tarefas e evitar sobrecarga, resultando em maior produtividade e eficiência.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            É necessário software para usar Kanban?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Embora seja possível utilizar ferramentas físicas como quadros brancos e cartões, existem várias ferramentas digitais como Trello, Jira e Kanbanize que facilitam a implementação e gestão de Kanban, especialmente para equipes remotas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guia do Kanban com fundo primário -->
+    <section id="guia" class="section bg-primary text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Guia do Kanban</h2>
+            <div class="text-center mb-4">
+                <img src="imagem3.jpg" class="img-fluid rounded" alt="Guia do Kanban">
+            </div>
+            <h3 class="text-center mb-3">Princípios e Práticas</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm bg-light text-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Visualização do Trabalho</h5>
+                            <p class="card-text">Usar quadros para mostrar o fluxo de trabalho, permitindo que todos os membros da equipe acompanhem o progresso das tarefas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm bg-light text-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Limites de WIP</h5>
+                            <p class="card-text">Restringe o número de tarefas em andamento em cada coluna para evitar sobrecarga e melhorar o foco.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm bg-light text-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Gerenciamento do Fluxo</h5>
+                            <p class="card-text">Monitorar e otimizar o fluxo de trabalho para identificar e eliminar gargalos, melhorando a eficiência geral.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos -->
+    <section id="recursos" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Recursos</h2>
+            <div class="text-center mb-4">
+                <img src="imagem4.jpg" class="img-fluid rounded" alt="Recursos Kanban">
+            </div>
+            <p class="text-center mb-4">Aqui estão alguns recursos úteis para aprofundar seu conhecimento em Kanban:</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="https://trello.com" class="text-primary" target="_blank" rel="noopener">Trello</a> - Ferramenta popular de gerenciamento de projetos baseada em Kanban.</li>
+                        <li class="list-group-item"><a href="https://www.atlassian.com/software/jira" class="text-primary" target="_blank" rel="noopener">Jira</a> - Ideal para equipes de desenvolvimento de software.</li>
+                        <li class="list-group-item"><a href="https://kanbanize.com" class="text-primary" target="_blank" rel="noopener">Kanbanize</a> - Plataforma dedicada ao Kanban com recursos avançados.</li>
+                        <li class="list-group-item"><a href="https://www.smartsheet.com" class="text-primary" target="_blank" rel="noopener">Smartsheet</a> - Ferramenta flexível de gerenciamento de trabalho que suporta metodologias Kanban.</li>
+                        <li class="list-group-item"><a href="https://blog.getkanban.com/" class="text-primary" target="_blank" rel="noopener">Blog GetKanban</a> - Artigos e insights sobre a aplicação eficaz do Kanban.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Blog</h2>
+            <div class="text-center mb-4">
+                <img src="imagem5.jpg" class="img-fluid rounded" alt="Blog Kanban">
+            </div>
+            <p class="text-center mb-4">Leia nossos artigos mais recentes sobre práticas ágeis e Kanban:</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="#" class="text-primary">Como implementar Kanban em sua equipe</a></li>
+                        <li class="list-group-item"><a href="#" class="text-primary">Estudos de Caso: Kanban em Ação</a></li>
+                        <li class="list-group-item"><a href="#" class="text-primary">Melhores Práticas para Usar Kanban</a></li>
+                        <li class="list-group-item"><a href="#" class="text-primary">Ferramentas Essenciais para Kanban</a></li>
+                        <li class="list-group-item"><a href="#" class="text-primary">Kanban vs. Scrum: Qual Escolher?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato com fundo primário -->
+    <section id="contato" class="section bg-primary text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Contato</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="imagem6.png" class="img-fluid rounded" alt="Contato Kanban">
+                </div>
+                <div class="col-md-6">
+                    <p>Entre em contato conosco para mais informações ou para tirar suas dúvidas sobre Kanban:</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary w-100">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Kanban. Todos os direitos reservados.</p>
+            <div class="mt-2">
+                <a href="#" aria-label="Facebook" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="Twitter" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                <a href="#" aria-label="Instagram" class="text-white"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
